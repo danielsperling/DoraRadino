@@ -1,0 +1,380 @@
+body{
+  background-color: transparent !important;
+}
+
+nav{
+  // display: flex;
+  // justify-content: space-around;
+  // align-items: center;
+  // min-height: 80px;
+  // // position: fixed;
+  // width: 100%;
+  // z-index: 1;
+  // transition: background-color 500ms linear;
+  background-color: #222;
+  margin-bottom: 3em;
+  padding-top: 1.5em;
+  padding-bottom: 1.1em;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+
+.logo h1{
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+  color: rgb(226, 226, 226);
+  // color: #222;
+  padding-left: 0.4em;
+
+}
+
+
+.nav-links{
+  display: flex;
+  // width: 30%;
+  justify-content: space-around;
+  // align-self: center;
+  margin: 0;
+}
+
+.nav-links li{
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links{
+  list-style-type: none;
+
+}
+
+.nav-links a{
+  color: rgb(226, 226, 226);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 1em;
+  // padding-right: 25px;
+  // align-self: center;
+  // height: 40px;
+  // color: #222;
+}
+
+
+
+
+.burger{
+  display: none;
+}
+
+
+// -----------------------------------
+// SCROLLING EFFECT
+.nav-scroll{
+  background-color: rgba(34, 34, 34, 0.8);
+  transition: background-color 500ms linear;
+}
+
+.logo-change-color{
+  // background-color: rgb(226, 226, 266);
+  color: rgb(226,226,226) !important;
+  transition: color 500ms linear;
+}
+
+.links-change-color{
+  color: rgb(226,226,226) !important;
+  transition: color 500ms linear;
+}
+
+.nav-hide{
+  background-color: transparent !important;
+}
+
+.logo-hide{
+  color: transparent !important;
+}
+
+.links-hide{
+  color: transparent !important;
+}
+// SCROLLING EFFECT
+// -------------------------------------
+
+
+
+
+// @media screen and (max-width:567px){
+//   body{
+//     overflow-x: hidden;
+//   }
+//   .burger div{
+//     width: 25px;
+//     height: 3px;
+//     background-color: rgb(226, 226, 226);
+//     margin: 5px;
+//   }
+//   nav{
+//     background-color: #222;
+//   }
+//   .logo h1{
+//     color: rgb(226, 226, 226);
+//   }
+//   .nav-links{
+//     position: absolute;
+//     right: 0px;
+//     height: 92vh;
+//     top: 8vh;
+//     background-color: #222;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//     transform: translateX(100%);
+//     transition: transform 0.5s ease-in;
+//   }
+//   .nav-links a{
+//     color: rgb(226, 226, 226);
+//   }
+//   .nav-links li{
+//     opacity: 0;
+//   }
+//   .burger{
+//     display: block;
+//   }
+// }
+
+
+// @media screen and (max-width:768px){
+//   body{
+//     overflow-x: hidden;
+//   }
+//   nav{
+//     background-color: #222;
+//   }
+//   .logo h1{
+//     color: rgb(226, 226, 226);
+//   }
+//   .nav-links{
+//     position: absolute;
+//     right: 0px;
+//     height: 92vh;
+//     top: 80px;
+//     background-color: #222;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     width: 100%;
+//     transform: translateX(100%);
+//     transition: transform 0.5s ease-in;
+//   }
+//   .nav-links a{
+//     color: rgb(226, 226, 226);
+//   }
+//   .nav-links li{
+//     opacity: 0;
+//   }
+//   .burger{
+//     display: block;
+//   }
+// }
+
+// .nav-active{
+//   transform: translateX(0%);
+// }
+
+
+// @keyframes navLinkFade {
+//   from {
+//     opacity: 0;
+//     transform: translateX(50px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateX(0px);
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width:768px){
+//   .nav-links{
+//     width: 60%;
+//   }
+// }
+
+// @media screen and (max-width:992px){
+//   .nav-links{
+//     width: 60%;
+//   }
+// }
+
+// @media screen and (max-width:1200px){
+//   .nav-links{
+//     width: 60%;
+//   }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  -----------
+// old css navbar
+
+// li, a {
+//   font-weight: 1000;
+//   text-decoration: none !important;
+//   font-size: 20px;
+//   color: #0D3B66;
+//   padding-top: 15px;
+//   padding-right: 10px;
+//   font-family: 'Overpass', sans-serif;
+// }
+
+// a:hover {
+//   color: #6FAFEC
+// }
+
+// .nav {
+//   margin-right: 150px;
+// }
+
+
+// header {
+//   top: 0%;
+//   background-color: #f8f8f8;
+//   width: 100%;
+//   position: fixed;
+//   height: 120px;
+//   display: flex;
+//   align-items: center;
+//   z-index: 1;
+// }
+
+// .nav_links {
+//   list-style: none;
+// }
+
+// .nav_links li {
+//   display: inline-block;
+//   padding: 0px 20px;
+// }
+
+// .logo {
+//   margin-right: auto;
+//   margin-left: 150px
+// }
+
+// .btn {
+//   text-align: center;
+//   margin-right: 50px;
+//   font-size: 20px;
+//   padding-top: 15px;
+//   padding-right: 10px;
+//   font-family: 'Overpass', sans-serif;
+//   border-radius: 5px;
+// }
+
+// .btn:hover {
+//   color: #6FAFEC
+// }
+
+// .dropdown-item:hover {
+//   color: #6FAFEC
+// }
+
+// old css navabr
+ // --------------
+
+
+
+
+
+
+
+
+
+
+
+// custom lewagon set up for navbar
+
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }

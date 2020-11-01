@@ -1,0 +1,171 @@
+// Specific CSS for your home-page
+
+.containerhome{
+  max-width: 100%;
+  height: 100vh;
+  background: url("olivebranch.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+.parallax{
+  background-size: cover;
+  background-attachment: fixed;
+  height: 650px;
+  position: relative;
+  background: transparent;
+  object-fit: cover;
+}
+
+.container1{
+  max-width: 100%;
+  height: 500px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  position: relative;
+}
+
+.about{
+  display:flex;
+  flex-direction:column;
+  width: 50%;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.about p{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+
+
+}
+
+.about h1{
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #a6a396;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.image{
+  display:flex;
+  flex-direction:column;
+  width: 50%;
+  background: url("familgia.jpg");
+  background-size: cover;
+}
+
+.button{
+  padding: 11px 24px;
+  color: #222;
+  border-radius: 4px;
+  border: 3px solid #222;
+  font-weight: bolder;
+  width: 200px;
+  height: 60px;
+  font-size: 18px;
+  background-color: transparent;
+  text-align: center;
+  transition: 0.5s ease;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.button:hover{
+  border-color: white;
+  color: white;
+  background: #222;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+a.button {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.container2{
+  max-width: 100%;
+  height: 300px;
+  background-color: #222;
+  padding: 8px 24px;
+}
+
+.container2 p{
+  color: white;
+  text-align: center;
+  padding-right: 500px;
+  padding-left: 500px;
+  font-size: 22px;
+  padding-top: 70px;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.snip{
+  color: #a6a396;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+
+.container3{
+  max-width: 100%;
+  height: 500px;
+  display:flex;
+  flex-direction:row;
+  justify-content: space-around;
+  position: relative;
+}
+
+
+.image1{
+  display:flex;
+  flex-direction:column;
+  width: 50%;
+  background: url("AllBottles.jpeg");
+  background-size: cover;
+}
+
+.about1{
+  display:flex;
+  flex-direction:column;
+  width: 50%;
+  text-align: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.about1 h1{
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #a6a396;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.about1 p{
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+
+}

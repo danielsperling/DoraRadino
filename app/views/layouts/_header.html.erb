@@ -1,0 +1,44 @@
+<nav>
+  <div class="row fluid">
+
+    <div class="col-4">
+      <div class="logo">
+        <h1>Dora Radino</h1>
+      </div>
+    </div>
+
+    <div class="col-8">
+
+
+      <ul class="nav-links">
+        <li>
+          <%= link_to "Home", root_path, method: :get %>
+        </li>
+        <li>
+          <%= link_to "About", about_path, method: :get%>
+        </li>
+        <li>
+         <%= link_to "Products", products_path, method: :get%>
+        </li>
+        <li>
+          <%= link_to "Contact", contact_path, method: :get%>
+        </li>
+        <li>
+          <a href="#">Language</a>
+        </li>
+
+      </ul>
+
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+
+    </div>
+
+  </div>
+</nav>
+
+
+<!-- method: :get is for loading the parallax images after clicking on the links -->

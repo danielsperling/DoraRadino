@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Olioradino</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <!-- Needed to read device screen width (bootstrap) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+
+
+   <!-- Mapbox -->
+    <!-- <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script> -->
+    <!-- <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' /> -->
+
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%= yield :javascript %>
+
+
+
+
+    <!-- paralax -->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <!-- <script src="/assets/parallax.min.js"></script> -->
+
+
+
+  </head>
+
+  <body>
+    <%= render "layouts/header"  %>
+      <%= yield %>
+    <%#= render "layouts/footer" %>
+
+
+  </body>
+
+</html>

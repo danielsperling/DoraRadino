@@ -18,17 +18,20 @@ client.getEntry('6n40P0yYxByEyt15RHBc7Q').then((info) => {
   const myAbout = {
     picture: info.fields.aboutPicture,
     title: info.fields.title,
-    information: info.fields.aboutInformation.content[0]
+    information: info.fields.aboutInformation
   }
 
   // Picture
   aboutImage.innerHTML = myAbout.picture
 
+
   //Title
   aboutTitle.innerText = myAbout.title
 
   // Description
-  aboutInformation.innerHTML = myAbout.information
+  // aboutInformation.innerHTML = myAbout.information
+  aboutInformation.innerHTML = myAbout.information.content.map((text) =>
+   documentToHtmlString(text));
 
 });
 

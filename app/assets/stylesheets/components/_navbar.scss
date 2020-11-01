@@ -1,104 +1,148 @@
-body{
-  background-color: transparent !important;
-}
-
-nav{
-  // display: flex;
-  // justify-content: space-around;
-  // align-items: center;
-  // min-height: 80px;
-  // // position: fixed;
-  // width: 100%;
-  // z-index: 1;
-  // transition: background-color 500ms linear;
-  background-color: #222;
-  margin-bottom: 3em;
-  padding-top: 1.5em;
-  padding-bottom: 1.1em;
-  position: sticky;
-  top: 0;
-  z-index: 99;
-}
-
-
-.logo h1{
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font-size: 1.4em;
-  color: rgb(226, 226, 226);
-  // color: #222;
-  padding-left: 0.4em;
-
-}
-
-
-.nav-links{
-  display: flex;
-  // width: 30%;
-  justify-content: space-around;
-  // align-self: center;
-  margin: 0;
-}
-
-.nav-links li{
-  margin: 0;
-  padding: 0;
-}
-
-.nav-links{
-  list-style-type: none;
-
-}
-
-.nav-links a{
-  color: rgb(226, 226, 226);
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 1em;
-  // padding-right: 25px;
-  // align-self: center;
-  // height: 40px;
-  // color: #222;
-}
 
 
 
 
-.burger{
-  display: none;
-}
 
 
-// -----------------------------------
-// SCROLLING EFFECT
-.nav-scroll{
-  background-color: rgba(34, 34, 34, 0.8);
-  transition: background-color 500ms linear;
-}
 
-.logo-change-color{
-  // background-color: rgb(226, 226, 266);
-  color: rgb(226,226,226) !important;
-  transition: color 500ms linear;
-}
 
-.links-change-color{
-  color: rgb(226,226,226) !important;
-  transition: color 500ms linear;
-}
 
-.nav-hide{
-  background-color: transparent !important;
-}
 
-.logo-hide{
-  color: transparent !important;
-}
 
-.links-hide{
-  color: transparent !important;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// body{
+//   background-color: transparent !important;
+// }
+
+// nav{
+//   // display: flex;
+//   // justify-content: space-around;
+//   // align-items: center;
+//   // min-height: 80px;
+//   // // position: fixed;
+//   // width: 100%;
+//   // z-index: 1;
+//   // transition: background-color 500ms linear;
+//   background-color: #222;
+//   margin-bottom: 3em;
+//   padding-top: 1.5em;
+//   padding-bottom: 1.1em;
+//   position: sticky;
+//   top: 0;
+//   z-index: 99;
+// }
+
+
+// .logo h1{
+//   letter-spacing: 5px;
+//   text-transform: uppercase;
+//   font-size: 1.4em;
+//   color: rgb(226, 226, 226);
+//   // color: #222;
+//   padding-left: 0.4em;
+
+// }
+
+
+// .nav-links{
+//   display: flex;
+//   // width: 30%;
+//   justify-content: space-around;
+//   // align-self: center;
+//   margin: 0;
+// }
+
+// .nav-links li{
+//   margin: 0;
+//   padding: 0;
+// }
+
+// .nav-links{
+//   list-style-type: none;
+
+// }
+
+// .nav-links a{
+//   color: rgb(226, 226, 226);
+//   text-decoration: none;
+//   letter-spacing: 3px;
+//   font-weight: bold;
+//   font-size: 1em;
+//   // padding-right: 25px;
+//   // align-self: center;
+//   // height: 40px;
+//   // color: #222;
+// }
+
+
+
+
+// .burger{
+//   display: none;
+// }
+
+
+// // -----------------------------------
+// // SCROLLING EFFECT
+// .nav-scroll{
+//   background-color: rgba(34, 34, 34, 0.8);
+//   transition: background-color 500ms linear;
+// }
+
+// .logo-change-color{
+//   // background-color: rgb(226, 226, 266);
+//   color: rgb(226,226,226) !important;
+//   transition: color 500ms linear;
+// }
+
+// .links-change-color{
+//   color: rgb(226,226,226) !important;
+//   transition: color 500ms linear;
+// }
+
+// .nav-hide{
+//   background-color: transparent !important;
+// }
+
+// .logo-hide{
+//   color: transparent !important;
+// }
+
+// .links-hide{
+//   color: transparent !important;
+// }
 // SCROLLING EFFECT
 // -------------------------------------
 

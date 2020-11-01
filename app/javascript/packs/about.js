@@ -1,0 +1,37 @@
+import * as contentful from 'contentful';
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+
+let pictureHtml = ''
+const aboutImage = document.querySelector('#about-image')
+const aboutTitle = document.querySelector('#about-title')
+const aboutInformation = document.querySelector('#about-information')
+
+
+const client = contentful.createClient({
+  space: 'pt7lnecnc1k7',
+  accessToken: 'za2zvlTnog6MuxQlgyAA-BioAOknisKQe7xRgJFKDfo'
+});
+
+client.getEntry('6n40P0yYxByEyt15RHBc7Q').then((info) => {
+  console.log(info);
+
+  const myAbout = {
+    picture: info.fields.aboutPicture,
+    title: info.fields.title,
+    information: info.fields.aboutInformation.content[0]
+  }
+
+  // Picture
+  aboutImage.innerHTML = myAbout.picture
+
+  //Title
+  aboutTitle.innerText = myAbout.title
+
+  // Description
+  aboutInformation.innerHTML = myAbout.information
+
+});
+
+
+
+

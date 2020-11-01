@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootstrap', '~> 4.5.2'
 gem 'font-awesome-sass'
 
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

@@ -40,7 +40,7 @@ client.getEntry('59oeYVF5nPUIiHvHodbfS').then((data) => {
 
 const buildPicture = (data) => {
   return`<div class="col text-center">
-    <img src="https://${data.picture.fields.file.url}" width="200" height="200" alt="">
+    <img src="https://${data.picture.fields.file.url}"  alt="">
     <h5>${data.title}</h5>
     <p>${data.price}$</p>
   </div>`

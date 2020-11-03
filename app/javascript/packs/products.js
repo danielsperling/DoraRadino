@@ -9,7 +9,7 @@ const myDescription = document.querySelector('#product-description')
 
 const client = contentful.createClient({
   space: 'pt7lnecnc1k7',
-  accessToken: 'za2zvlTnog6MuxQlgyAA-BioAOknisKQe7xRgJFKDfo'
+  accessToken: 'CONTENTFUL_API_KEY'
 });
 
 client.getEntry('59oeYVF5nPUIiHvHodbfS').then((data) => {

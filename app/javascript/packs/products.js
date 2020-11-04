@@ -40,7 +40,7 @@ client.getEntry('59oeYVF5nPUIiHvHodbfS').then((data) => {
 
 const buildPicture = (data) => {
   return`<div class="col text-center">
-    <img src="https://${data.picture.fields.file.url}"  alt="">
+    <img src="https://${data.picture.fields.file.url}"class="img-fluid" alt="Responsive image">
     <h5>${data.title}</h5>
     <p>${data.price}$</p>
   </div>`

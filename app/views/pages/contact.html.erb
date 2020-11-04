@@ -1,12 +1,12 @@
-<br>
-<br>
-<br>
-<br>
+<div id="map"
+     style="width: 100%; height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 
-  <div id='map' ></div>
-  <script>
+  </div>
+<!--   <script>
 
-    mapboxgl.accessToken = "<%= ENV['MAPBOX_API_KEY'] %>"
+    mapboxgl.accessToken = "<%#= ENV['MAPBOX_API_KEY'] %>"
     var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/danielsperling/ckcf4r1dn17kd1inyikg0gzth'
@@ -47,7 +47,7 @@
 
 });
 
-</script>
+</script> -->
 
 
 <div class="container5">

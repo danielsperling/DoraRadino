@@ -1,15 +1,15 @@
 // Specific CSS for your home-page
 
-.containerhome{
-  max-width: 100%;
-  height: 100vh;
-  background: url("olivebranch.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  position: relative;
-}
+// .containerhome{
+//   max-width: 100%;
+//   height: 100vh;
+//   background: url("olivebranch.jpg") no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+//   position: relative;
+// }
 
 .parallax{
   background-size: cover;
@@ -34,8 +34,8 @@
   flex-direction:column;
   width: 50%;
   text-align: center;
-  padding-left: 150px;
-  padding-right: 150px;
+  // padding-left: 150px;
+  // padding-right: 150px;
   align-items: center;
   justify-content: center;
   font-family: 'Roboto', sans-serif;
@@ -110,8 +110,8 @@ a.button {
 .container2 p{
   color: white;
   text-align: center;
-  padding-right: 500px;
-  padding-left: 500px;
+  // padding-right: 500px;
+  // padding-left: 500px;
   font-size: 22px;
   padding-top: 70px;
   font-family: 'Roboto', sans-serif;
@@ -148,8 +148,8 @@ a.button {
   flex-direction:column;
   width: 50%;
   text-align: center;
-  padding-left: 150px;
-  padding-right: 150px;
+  // padding-left: 150px;
+  // padding-right: 150px;
   align-items: center;
   justify-content: center;
 

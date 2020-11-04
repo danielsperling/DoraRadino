@@ -13,7 +13,6 @@ const client = contentful.createClient({
 });
 
 client.getEntry('6n40P0yYxByEyt15RHBc7Q').then((info) => {
-  console.log(info);
 
   const myAbout = {
     picture: info.fields.aboutPicture,

@@ -14,7 +14,6 @@ const client = contentful.createClient({
 
 client.getEntry('59oeYVF5nPUIiHvHodbfS').then((data) => {
 
-  console.log(data);
  const myProduct = {
    pictures: data.fields.pictures,
    title: data.fields.title,

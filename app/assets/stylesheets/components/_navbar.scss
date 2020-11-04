@@ -1,18 +1,22 @@
 a{
   color: #222;
   font-size: 18px;
-
   margin-right: 20px;
   font-family: 'Roboto', sans-serif;
 }
 
-#navbarNavAltMarkup{
-  justify-content: flex-end;
-
-
+a:hover{
+  text-decoration: none;
+  color: #222;
 }
 
+#navbarNavAltMarkup{
+  justify-content: flex-end;
+}
 
+a #navbarNavAltMarkup{
+  text-decoration: none;
+}
 
 
 

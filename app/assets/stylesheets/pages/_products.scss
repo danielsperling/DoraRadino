@@ -1,17 +1,18 @@
-#title-product{
-  justify-content:center;
-  margin-top: 20px;
+#product-title{
   font-family: 'Roboto', sans-serif;
-
+  margin: 24px auto;
 }
 
 
 #text-product{
+  justify-content:center;
+  background-color: white;
+  padding: 24px;
   text-align: center;
-  margin-top: 15px;
-  margin-bottom: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 1.2em;
+  margin: 24px auto;
 }
 
 

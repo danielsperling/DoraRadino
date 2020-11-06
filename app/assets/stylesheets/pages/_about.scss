@@ -4,19 +4,23 @@
   margin-top: 3em;
 }
 
-#title-about{
-  justify-content:center;
-  margin-top: 3em;
+#about-title{
   font-family: 'Roboto', sans-serif;
+  margin: 24px auto;
+
 
 }
 
 #text-about{
+  justify-content:center;
+
+  background-color: white;
+  padding: 24px;
   text-align: center;
-  margin-top: 2em;
-  margin-bottom: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   font-family: 'Roboto', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  margin: 24px auto;
 }
 
 

@@ -30,13 +30,13 @@ client.getEntry('6n40P0yYxByEyt15RHBc7Q').then((info) => {
   // Description
   // aboutInformation.innerHTML = myAbout.information
   aboutInformation.innerHTML = myAbout.information.content.map((text) =>
-   documentToHtmlString(text));
+    documentToHtmlString(text));
 
 });
 
 
 const buildPicture = (data) => {
-  return`<div class="col text-center">
+  return `<div class="col text-center">
     <img src="https://${data.fields.file.url}" class="img-fluid" alt="Responsive image">
   </div>`
 }

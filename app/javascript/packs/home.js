@@ -1,13 +1,21 @@
 import * as contentful from 'contentful';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 
-let pictureHtml = ''
+
+//Banner
 const homeImage = document.querySelector('#home-image')
+
+// Our story
 const homeTitle = document.querySelector('#home-title')
 const homeInformation = document.querySelector('#home-information')
-// const homeOurStoryImage = document.querySelector('#home-ourstory-image')
-const homePageProdcuts = document.querySelector('#home-page-products')
+const homeInformationImage = document.querySelector('#home-information-image')
 
+
+// Our products
+const homeProductTitle = document.querySelector('#home-product-title')
+const homeProductText = document.querySelector('#home-product-text')
+const homeProductImage = document.querySelector('#home-product-image')
 
 
 const client = contentful.createClient({
@@ -16,47 +24,40 @@ const client = contentful.createClient({
 });
 
 client.getEntry('1tObOSALaX8lCVmhQZlDKk').then((info) => {
-    console.log(info)
 
     const myHome = {
         picture: info.fields.homeFirstImage,
         title: info.fields.homeTitle,
         information: info.fields.homeText,
-        // picture1: info.fields.ourStoryImage,
-        productinfo: info.fields.homePageProduct
+        informationImage: info.fields.homeTextImage,
+
+        productTitle: info.fields.homeProductTitle,
+        productText: info.fields.homeProductText,
+        productImage: info.fields.homeProductImage,
     }
 
     // Picture
     homeImage.innerHTML = buildPicture(myHome.picture)
 
-    //Title
+    // Our Story
     homeTitle.innerText = myHome.title
+    homeInformation.innerHTML = myHome.information.content.map(toHtml);
+    homeInformationImage.innerHTML = buildPicture(myHome.informationImage)
 
-    // Description
-    // aboutInformation.innerHTML = myAbout.information
-    homeInformation.innerHTML = myHome.information.content.map((text) =>
-        documentToHtmlString(text));
 
-    // Our Story Image
-    // homeOurStoryImage = buildPictureHome(myHome.picture1)
-
-    homePageProdcuts.innerHTML = myHome.productinfo.content.map((text) =>
-        documentToHtmlString(text));
-
+    // Our products
+    homeProductTitle.innerHTML = myHome.productTitle
+    homeProductText.innerHTML = myHome.productText.content.map(toHtml);
+    homeProductImage.innerHTML = buildPicture(myHome.productImage)
 });
 
 
+const toHtml = (text) => documentToHtmlString(text);
+
 const buildPicture = (data) => {
     return `<div class="col text-center">
-    <img src="https://${data.fields.file.url}" class="img-fluid" alt="Responsive image">
+    <img src="https://${data.fields.file.url}" class="img" alt="Responsive image">
   </div>`
 }
-
-// const buildPictureHome = (data) => {
-//     return `<div class="col text-center">
-//     <img src="https://${data.fields.file.url}" class="img-fluid" alt="Responsive image">
-//   </div>`
-// }
-
 
 

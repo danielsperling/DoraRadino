@@ -13,6 +13,7 @@
 
 .parallax{
   
+  background-attachment: fixed;
   height: 650px;
   position: relative;
   background: transparent;
@@ -38,7 +39,6 @@
 .about{
   display:flex;
   flex-direction:column;
-  width: 50%;
   text-align: center;
   // padding-left: 150px;
   // padding-right: 150px;

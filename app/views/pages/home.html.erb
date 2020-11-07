@@ -1,8 +1,27 @@
 <div class="container">
-  <div class="parallax" data-parallax="scroll" data-image-src="assets/OlioRadinoLogo.jpg"></div>
+
+  <div class="row" id="home-image"> </div>
+
+  
+  <div class="row" id="home-text">
+    <h2 id="home-title"></h2>
+    <p id="home-information"></p>
+    <div class="btn">
+      <%= link_to 'Find out more', about_path, method: :get, :class => "btn btn-outline-secondary" %> 
+    </div>
+  </div>
+
+    <div class="row" id="home-prodcuts">
+      <p id="home-page-products"></p>
+      <div class="btn">
+        <%= link_to 'Find out more', products_path, method: :get, :class => "btn btn-outline-secondary" %> 
+      </div>
+    </div>
+
 </div>
 
 
+<%# <div class='row' id="home-ourstory-image"> %>
 
 
 
@@ -14,6 +33,38 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <%# <div class="parallax" data-parallax="scroll" data-image-src="assets/OlioRadinoLogo1.jpg"></div> %>
 
 
 
@@ -48,8 +99,8 @@
           spicy taste, with a touch of fruity sweetness.
         </p>
           <%= link_to 'Find out more', products_path, class: 'button' %>
-      </div>
-    </div> 
+      <%# </div>
+    </div>  %>
 
 
 

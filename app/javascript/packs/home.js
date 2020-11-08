@@ -55,7 +55,7 @@ const toHtml = (text) => documentToHtmlString(text);
 
 const buildPicture = (data) => {
     return `<div class="col text-center">
-    <img src="https://${data.fields.file.url}" class="img" class="img-fluid" alt="Responsive image">
+    <img src="https://${data.fields.file.url}" class="img-fluid" alt="Responsive image">
   </div>`
 }
 

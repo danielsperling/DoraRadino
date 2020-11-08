@@ -1,6 +1,5 @@
 import * as contentful from 'contentful';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
-import { BLOCKS, INLINES } from '@contentful/rich-text-types'
 
 
 //Banner
@@ -56,7 +55,7 @@ const toHtml = (text) => documentToHtmlString(text);
 
 const buildPicture = (data) => {
     return `<div class="col text-center">
-    <img src="https://${data.fields.file.url}" class="img" alt="Responsive image">
+    <img src="https://${data.fields.file.url}" class="img" class="img-fluid" alt="Responsive image">
   </div>`
 }
 

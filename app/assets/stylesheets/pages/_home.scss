@@ -8,7 +8,14 @@
   font-size: 1.5em;
 }
 
+#home-product-title{
+  font-family: 'Roboto', sans-serif;
+  margin: 24px auto;
+  font-size: 1.5em;
+}
+
 #home-text{
+  text-align: center;
   background-color: white;
   padding: 24px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -28,10 +35,17 @@
   margin: 24px auto;
 }
 
-.img-home img{
-  height: 300px;
-  width: 320px;
+.img-fluid{
+  margin-top: 50px;
 }
+
+
+//  CSS for images home page - small
+
+// .img-home img{
+//   height: 300px;
+//   width: 320px;
+// }
 
 
 

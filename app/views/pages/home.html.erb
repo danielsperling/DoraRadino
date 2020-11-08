@@ -13,15 +13,18 @@
 
   <div class="col-md-6 col-xs-12">
     <div id="home-information" class="text-center"></div>
+
+       <%= link_to 'Find out more', about_path, method: :get, class: "btn btn-outline-secondary" %> 
+
   </div>
 
   <div class="col-md-6 col-xs-12">
     <div id="home-information-image" class="img-home" ></div>
   </div>
 
-  <div class="col-12 text-md-left">
+  <%# <div class="col-12 text-md-left">
     <%= link_to 'Find out more', about_path, class: "btn btn-outline-secondary" %> 
-  </div>
+  <%# </div>  %>
 </div>
 
 
@@ -33,15 +36,18 @@
 
   <div class="col-md-6 col-xs-12">
     <div id="home-product-image" class="img-home"></div>
+
   </div>
 
   <div class="col-md-6 col-xs-12">
     <div id="home-product-text" class="text-center"></div>
+    <%= link_to 'Find out more', products_path, method: :get, class: "btn btn-outline-secondary" %> 
+
   </div>
 
-  <div class="col-12 text-md-right" >
+  <%# <div class="col-12 text-md-right" >
     <%= link_to 'Find out more', products_path, class: "btn btn-outline-secondary" %> 
-  </div>
+  <%# </div>  %>
 </div>
 
 </div>

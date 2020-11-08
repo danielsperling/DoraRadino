@@ -23,6 +23,7 @@ const client = contentful.createClient({
 });
 
 client.getEntry('1tObOSALaX8lCVmhQZlDKk').then((info) => {
+    console.log(info)
 
     const myHome = {
         picture: info.fields.homeFirstImage,

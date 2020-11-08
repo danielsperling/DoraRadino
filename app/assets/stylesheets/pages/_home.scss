@@ -22,6 +22,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   margin: 24px auto;
+  align-items: center;
 }
 
 
@@ -33,30 +34,70 @@
   font-family: 'Roboto', sans-serif;
   font-size: 1.2em;
   margin: 24px auto;
+  align-items: center;
 }
 
 .img-fluid{
   margin-top: 50px;
 }
 
+#home-product-text{
+  margin-bottom: 20px;
+}
 
-//  CSS for images home page - small
+#home-information{
+  margin-bottom: 20px;
+}
 
-// .img-home img{
-//   height: 300px;
-//   width: 320px;
+
+
+
+
+
+
+// .logo{
+//   background: url(OlioRadinoLogoWoman.jpg);
+//   z-index: 100;
+//   background-size: cover;
+//   width: 350px;
+//   height: 450px;
+//   position: absolute;
+//   // visibility: hidden;
+// }
+
+// #homelogo{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
 // }
 
 
+// Logo Appear 
+
+// .logoAppear{
+//   background: url(OlioRadinoLogoWoman.jpg);
+//   z-index: 100;
+//   background-size: cover;
+//   width: 350px;
+//   height: 450px;
+//   position: absolute;
+//  }
 
 
 
 
 
 
+// <script>  
+//   const logo = document.querySelector('#logo')
+  
+//   window.addEventListener('load', function() {
+//     alert('Hello')
+//     logo.classList.add('#logoAppear')
 
+//   });
 
-
+// </script>
 
 
 

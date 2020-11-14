@@ -25,6 +25,7 @@ gem 'bootstrap', '~> 4.5.2'
 gem 'font-awesome-sass'
 
 gem 'dotenv-rails', groups: %i[development test]
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

@@ -5,8 +5,9 @@
 
 
   <div class="row flex" id="text-product">
+<%# edw vazeis price %>
     <h2 id="product-title"></h2>
-    <p id="product-description"></p>
+    <p id="product-description"> </p>
   </div>
 
 </div>
@@ -24,6 +25,7 @@ var myTitle = document.querySelector('#product-title')
 var myDescription = document.querySelector('#product-description')
 
 window.client.getEntry('59oeYVF5nPUIiHvHodbfS', {locale: locale}).then((data) => {
+  console.log(data);
   
   var myProduct = {
         pictures: data.fields.pictures,
@@ -52,7 +54,15 @@ var buildPicture = (data) => {
     return `<div class="col text-center">
     <img src="https://${data.picture.fields.file.url}"class="img-fluid" alt="Responsive image">
     <h5>${data.title}</h5>
-    <p>${data.price}€</p>
+
+    <div class="d-flex justify-content-center"">
+    <p>${data.price}€</p> 
+    <p>&nbsp;</p>
+    <p>${data.priceMedium}€</p>
+    <p>&nbsp;</p>
+    <p>${data.priceBig}€</p>
+    </div>
+
   </div>`
 }
 
@@ -109,4 +119,3 @@ var buildPicture = (data) => {
 
   </p>
 </div> -->
-

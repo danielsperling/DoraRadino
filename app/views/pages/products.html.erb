@@ -5,14 +5,71 @@
 
 
   <div class="row flex" id="text-product">
+<%# edw vazeis price %>
     <h2 id="product-title"></h2>
-    <p id="product-description"></p>
+    <p id="product-description"> </p>
   </div>
 
 </div>
 
 
+<%=  content_for :javascript do %>
+<script>
 
+var url = new URL(window.location.href)
+var locale = url.searchParams.get("locale") || "en-US";
+
+var pictureHtml = ''
+var myPictures = document.querySelector('#product-pictures')
+var myTitle = document.querySelector('#product-title')
+var myDescription = document.querySelector('#product-description')
+
+window.client.getEntry('59oeYVF5nPUIiHvHodbfS', {locale: locale}).then((data) => {
+  console.log(data);
+  
+  var myProduct = {
+        pictures: data.fields.pictures,
+        title: data.fields.title,
+        description: data.fields.description
+    }
+
+
+    //  Pictures
+    myProduct.pictures.forEach((entry) => {
+        pictureHtml += buildPicture(entry.fields);
+        myPictures.innerHTML = pictureHtml;
+    })
+
+    // TITLE
+    myTitle.innerText = myProduct.title
+
+    // Description
+    myDescription.innerHTML = myProduct.description.content.map((text) =>
+        documentToHtmlString(text));
+
+});
+
+
+var buildPicture = (data) => {
+    return `<div class="col text-center">
+    <img src="https://${data.picture.fields.file.url}"class="img-fluid" alt="Responsive image">
+    <h5>${data.title}</h5>
+
+    <div class="d-flex justify-content-center"">
+    <h5>${data.price}€</h5> 
+    <h5> &ensp;</h5>
+    <h5>${data.priceMedium}€</h5>
+    <h5> &ensp;</h5>
+    <h5>${data.priceBig}€</h5>
+    </div>
+
+  </div>`
+}
+
+
+</script>
+
+<% end  %>
 
 
 
@@ -62,4 +119,3 @@
 
   </p>
 </div> -->
-

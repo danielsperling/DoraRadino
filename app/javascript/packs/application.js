@@ -7,9 +7,9 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
-require("./products")
-require("./about")
-require("./home")
+// require("./products")
+// require("./about")
+// require("./home")
 // require("./parallax.min")
 
 
@@ -19,3 +19,8 @@ require("./home")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+
+import * as contentful from 'contentful';
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
+window.cf = contentful

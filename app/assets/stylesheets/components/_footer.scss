@@ -1,16 +1,15 @@
 #footer {
   // background-color:rgb(248,249,250);
-  background-color:rgb(52,58,64);
-  height: 50px;
+  background-color: rgb(52, 58, 64);
   align-items: center;
   justify-content: center;
-
+  position: relative;
+  margin-top: auto;
+  height: 50px;
 }
 
 .pfooter {
   font-size: 0.9em;
   // color: #222;
-  color: rgb(248,249,250);
+  color: rgb(248, 249, 250);
 }
-
-

@@ -11,7 +11,50 @@
 </div>
 
 
+<%=  content_for :javascript do %>
+<script>
+var url = new URL(window.location.href)
+var locale = url.searchParams.get("locale") || "en-US";
 
+var aboutImage = document.querySelector('#about-image');
+var aboutTitle = document.querySelector('#about-title');
+var aboutInformation = document.querySelector('#about-information');
+
+window.client.getEntry('6n40P0yYxByEyt15RHBc7Q', {locale: locale}).then((info) => {
+
+  var myAbout = {
+    picture: info.fields.aboutPicture,
+    title: info.fields.title,
+    information: info.fields.aboutInformation
+  }
+
+  // Picture
+  aboutImage.innerHTML = buildPicture(myAbout.picture)
+
+
+  //Title
+  aboutTitle.innerText = myAbout.title
+
+  // Description
+  // aboutInformation.innerHTML = myAbout.information
+  aboutInformation.innerHTML = myAbout.information.content.map((text) =>
+    documentToHtmlString(text));
+
+});
+
+
+var buildPicture = (data) => {
+  return `<div class="col text-center">
+    <img src="https://${data.fields.file.url}" class="img-fluid" alt="Responsive image">
+  </div>`
+}
+
+
+
+
+</script>
+
+<% end  %>
 
 
 

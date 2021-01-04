@@ -8,11 +8,14 @@
 // @import "font-awesome-sprockets";
 // @import "font-awesome";
 
-
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
 
-
-
-
+html,
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

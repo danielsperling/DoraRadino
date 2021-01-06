@@ -24,3 +24,16 @@ require("channels")
 import * as contentful from 'contentful';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 window.cf = contentful
+
+
+window.onload = function(){
+    const switcher = document.querySelectorAll(".locale_switch")
+    
+    switcher.forEach((element) => {
+     element.addEventListener('click', function(event) {
+         event.preventDefault()
+         localStorage.setItem('locale', event.target.dataset.locale)
+         location.reload()
+     })
+    })
+}

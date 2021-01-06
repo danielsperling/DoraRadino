@@ -14,7 +14,7 @@
 <%=  content_for :javascript do %>
 <script>
 var url = new URL(window.location.href)
-var locale = url.searchParams.get("locale") || "en-US";
+var locale = localStorage.getItem("locale") || "en-US";
 
 var aboutImage = document.querySelector('#about-image');
 var aboutTitle = document.querySelector('#about-title');

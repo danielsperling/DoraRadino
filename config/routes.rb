@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  scope "(:locale)", locale: /en-US|it/ do
+
   root to: 'pages#home'
   get 'about', to: 'pages#about'
   get 'products', to: 'pages#products'

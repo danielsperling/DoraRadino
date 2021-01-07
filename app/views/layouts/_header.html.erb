@@ -1,64 +1,4 @@
 
-
-
-
-<%=  content_for :javascript do %>
-<script>
-
-var url = new URL(window.location.href)
-var locale = localStorage.getItem("locale") || "en-US";
-
-var homeNav = document.querySelector('.home');
-var aboutNav = document.querySelector('.about');
-var productsNav = document.querySelector('.products');
-var contactNav = document.querySelector('.contact');
-var galleryNav = document.querySelector('.gallery');
-
-
-// Our story
-window.client.getEntry('2oFe6TmlRkOYrklWtKoFYf', {locale: locale}).then((info) => {
-  
-    console.log(info)
-
-    var myNav = {
-        home: info.fields.home,
-        about: info.fields.about,
-        products: info.fields.products,
-        contact: info.fields.contact,
-        gallery: info.fields.gallery
-
-    }
-
-    homeNav.innerText = myNav.home
-    aboutNav.innerText = myNav.about
-    productsNav.innerText = myNav.products
-    contactNav.innerText = myNav.contact
-    galleryNav.innerText = myNav.gallery
-
-    // Picture
-    // homeImage.innerHTML = buildPicture(myHome.picture)
-
-    // // Our Story
-    // homeTitle.innerText = myHome.title
-    // homeInformation.innerHTML = myHome.information.content.map(toHtml);
-    // homeInformationImage.innerHTML = buildPicture(myHome.informationImage)
-
-
-    // // Our products
-    // homeProductTitle.innerHTML = myHome.productTitle
-    // homeProductText.innerHTML = myHome.productText.content.map(toHtml);
-    // homeProductImage.innerHTML = buildPicture(myHome.productImage)
-});
-
-
-// var toHtml = (text) => documentToHtmlString(text);
-
-</script>
-
-<% end  %>
-
-
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
           <%# <%= image_tag("OlioRadinoLogo.jpg", height: '40', width: '35') %> 
@@ -72,19 +12,19 @@ window.client.getEntry('2oFe6TmlRkOYrklWtKoFYf', {locale: locale}).then((info) =
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-      <div class="home"> <%= link_to `${homeNav}`, root_path, method: :get%></div>
+       <%= link_to "Home", root_path, method: :get %>
       </li>
       <li class="nav-item">
-        <div class="about"> <%= link_to "", about_path, method: :get %> </div>
+        <%= link_to "About", about_path, method: :get%>
       </li>
       <li class="nav-item">
-        <div class="products"><%= link_to "", products_path, method: :get%></div>
+        <%= link_to "Products", products_path, method: :get%>
         </li>
       <li class="nav-item">
-       <div class="contact"><%= link_to "", contact_path, method: :get%></div>
+       <%= link_to "Contact", contact_path, method: :get%>
       </li>
       <li class="nav-item">
-       <div class="gallery"><%= link_to "", gallery_path, method: :get%></div>
+       <%= link_to "Gallery", gallery_path, method: :get%>
       </li>
     </ul>
           <%= link_to image_tag("it.png", height: '20', width: '20', data:{locale: 'it'}), "#", class:'locale_switch', data:{locale: 'it'} %>
@@ -95,3 +35,4 @@ window.client.getEntry('2oFe6TmlRkOYrklWtKoFYf', {locale: locale}).then((info) =
     </div>
 
 </nav>
+

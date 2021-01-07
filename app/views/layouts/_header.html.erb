@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="#">
           <%# <%= image_tag("OlioRadinoLogo.jpg", height: '40', width: '35') %> 
@@ -12,26 +11,25 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
-       <%= link_to "Home", root_path, method: :get %>
+       <%= link_to t('_header.home'), root_path, method: :get %>
       </li>
       <li class="nav-item">
-        <%= link_to "About", about_path, method: :get%>
+        <%= link_to t("_header.about"), about_path, method: :get%>
       </li>
       <li class="nav-item">
-        <%= link_to "Products", products_path, method: :get%>
+        <%= link_to t("_header.products"), products_path, method: :get%>
         </li>
       <li class="nav-item">
-       <%= link_to "Contact", contact_path, method: :get%>
+       <%= link_to t("_header.contact"), contact_path, method: :get%>
       </li>
       <li class="nav-item">
-       <%= link_to "Gallery", gallery_path, method: :get%>
+       <%= link_to t("_header.gallery"), gallery_path, method: :get%>
       </li>
     </ul>
-          <%= link_to image_tag("it.png", height: '20', width: '20', data:{locale: 'it'}), "#", class:'locale_switch', data:{locale: 'it'} %>
-          <%= link_to image_tag("uk.png", height: '20', width: '20', data:{locale: 'en-US'}), "#", class:'locale_switch', data:{locale: 'en-US'} %>
+          <%= link_to image_tag("it.png", height: '20', width: '20', data:{locale: 'it'}), "#", class:'locale_switch', data:{locale: 'it'}, locale: 'it' %>
+          <%= link_to image_tag("uk.png", height: '20', width: '20', data:{locale: 'en-US'}), "#", class:'locale_switch', data:{locale: 'en-US'}, locale: 'en-US' %>
 
 
-  
     </div>
 
 </nav>

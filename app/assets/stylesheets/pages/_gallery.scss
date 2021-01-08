@@ -3,7 +3,7 @@
 }
 .carousel,
 .carousel-inner {
-  height: 600px;
+  height: 750px;
   width: 100%;
 }
 
@@ -12,8 +12,12 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 600px;
+  height: 700px;
   max-width: none;
   object-fit: cover;
   object-position: center;
+}
+
+.carousel-indicators li {
+  background-color: #222;
 }

@@ -38,7 +38,7 @@ window.client.getEntry('6n40P0yYxByEyt15RHBc7Q', {locale: locale}).then((info) =
   // Description
   // aboutInformation.innerHTML = myAbout.information
   aboutInformation.innerHTML = myAbout.information.content.map((text) =>
-    documentToHtmlString(text));
+    documentToHtmlString(text).replace(/\n/g, `</br>`));
 
 });
 

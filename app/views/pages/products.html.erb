@@ -45,7 +45,7 @@ window.client.getEntry('59oeYVF5nPUIiHvHodbfS', {locale: locale}).then((data) =>
 
     // Description
     myDescription.innerHTML = myProduct.description.content.map((text) =>
-        documentToHtmlString(text));
+        documentToHtmlString(text).replace(/\n/g, `</br>`));
 
 });
 
@@ -57,9 +57,9 @@ var buildPicture = (data) => {
 
     <div class="d-flex justify-content-center"">
     <h5>${data.price}€</h5> 
-    <h5> &ensp;</h5>
+    <h5> &emsp; </h5>
     <h5>${data.priceMedium}€</h5>
-    <h5> &ensp;</h5>
+    <h5> &emsp;</h5>
     <h5>${data.priceBig}€</h5>
     </div>
 

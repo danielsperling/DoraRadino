@@ -8,13 +8,19 @@
 <%# edw vazeis price %>
     <h2 id="product-title"></h2>
     <p id="product-description"> </p>
+          <button class="btn btn-outline-dark button"> Certificate </button>
+
   </div>
 
 </div>
 
 
 <%=  content_for :javascript do %>
+
+
 <script>
+var button = document.querySelector('#button')
+
 
 var url = new URL(window.location.href)
 var locale = localStorage.getItem("locale") || "en-US";
@@ -48,6 +54,12 @@ window.client.getEntry('59oeYVF5nPUIiHvHodbfS', {locale: locale}).then((data) =>
         documentToHtmlString(text).replace(/\n/g, `</br>`));
 
 });
+
+// button.addEventLister('click', function(){
+
+// })
+
+
 
 
 var buildPicture = (data) => {

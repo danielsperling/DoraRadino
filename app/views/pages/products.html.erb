@@ -2,8 +2,11 @@
 
   <div class="row flex" id="product-pictures" class="img-fluid" alt="Responsive image"></div>
 
-
-  <%= image_tag 'Certificate-page-003.jpg', class:"certificate" %>
+  <div class="row">
+    <div class="col-12">
+      <%= image_tag 'Certificate-page-003.jpg', class:"certificate container-fluid"  %>
+    </div>
+  </div>
 
 
 
@@ -13,7 +16,7 @@
     <h2 id="product-title"></h2>
     <p id="product-description"> </p>
     
-    <button class="btn btn-outline-dark"> Certificate </button>
+    <button id='button' class="btn btn-outline-dark"> Certificate </button>
 
   </div>
 
@@ -24,8 +27,7 @@
 
 
 <script>
-var button = document.querySelector('#btn')
-var certificate = document.querySelector('#certificate')
+
 
 
 var url = new URL(window.location.href)
@@ -65,7 +67,6 @@ window.client.getEntry('59oeYVF5nPUIiHvHodbfS', {locale: locale}).then((data) =>
 
 
 
-
 var buildPicture = (data) => {
     return `<div class="col text-center">
     <img src="https://${data.picture.fields.file.url}"class="img-fluid" alt="Responsive image">
@@ -81,13 +82,22 @@ var buildPicture = (data) => {
 
   </div>`
 }
-button.addEventLister('click', function(){
-  console.log('clicked')
-  certificate.style.display ='block'
+
+
+</script>
+
+
+<script> 
+const button = document.getElementById('button')
+const certificate = document.querySelector('.certificate')
+console.log(button, certificate)
+
+
+button.addEventListener('click', function (event){
+  console.log('Hello')
+  certificate.style.display = 'block'
 });
 
-
-btn();
 
 
 </script>

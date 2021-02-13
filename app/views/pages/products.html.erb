@@ -4,7 +4,7 @@
 
   <div class="row">
     <div class="col-12">
-      <%= image_tag 'cross-sign.png', class:"xsign container-fluid" %>
+      <%= image_tag 'cross-sign.png', class:"xsign" %>
       <%= image_tag 'Certificate-page-003.jpg', class:"certificate container-fluid"  %>
     </div>
   </div>
@@ -102,6 +102,12 @@ button.addEventListener('click', function (event){
   x.style.display = 'block';
 });
 
+
+x.addEventListener('click', function(event){
+  certificate.style.display = 'none';
+  x.style.display = 'none';
+  
+});
 
 
 

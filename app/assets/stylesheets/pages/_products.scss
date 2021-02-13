@@ -1,61 +1,27 @@
-#product-title{
-  font-family: 'Roboto', sans-serif;
+#product-title {
+  font-family: "Roboto", sans-serif;
   margin: 24px auto;
 }
 
-
-#text-product{
-  justify-content:center;
+#text-product {
+  justify-content: center;
   background-color: white;
   padding: 24px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.2em;
   margin: 24px auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.certificate {
+  height: 1100px;
+  width: 900px;
+  display: none;
+  z-index: 100;
+}
 
 // .backgroundprod{
-
 
 //   background: url("BotiliaRadino1.jpeg");
 //   height: 100vh;
@@ -63,11 +29,8 @@
 //   background-size: cover;
 // }
 
-
 // .abouttextprod{
 //   padding-right: 400px;
 //   padding-left: 400px;
 //   text-align: center;
 // }
-
-

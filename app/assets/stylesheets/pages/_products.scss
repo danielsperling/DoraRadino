@@ -12,12 +12,24 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.2em;
   margin: 24px auto;
+  z-index: -1;
 }
 
 .certificate {
   width: 100%;
   display: none;
   z-index: 100;
+  position: relative;
+}
+
+.xsign {
+  width: 50px;
+  position: absolute;
+  width: 25px;
+  top: 20px;
+  right: 50px;
+  z-index: 110;
+  display: none;
 }
 
 // .backgroundprod{

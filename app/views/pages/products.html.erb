@@ -4,6 +4,7 @@
 
   <div class="row">
     <div class="col-12">
+      <%= image_tag 'cross-sign.png', class:"xsign container-fluid" %>
       <%= image_tag 'Certificate-page-003.jpg', class:"certificate container-fluid"  %>
     </div>
   </div>
@@ -88,15 +89,20 @@ var buildPicture = (data) => {
 
 
 <script> 
-const button = document.getElementById('button')
-const certificate = document.querySelector('.certificate')
-console.log(button, certificate)
+const button = document.getElementById('button');
+const certificate = document.querySelector('.certificate');
+const x = document.querySelector('.xsign');
+
+console.log(button, certificate, x);
 
 
 button.addEventListener('click', function (event){
   console.log('Hello')
-  certificate.style.display = 'block'
+  certificate.style.display = 'block';
+  x.style.display = 'block';
 });
+
+
 
 
 

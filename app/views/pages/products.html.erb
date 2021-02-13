@@ -4,17 +4,34 @@
 
 
 
+
+
+
   <div class="row flex" id="text-product">
 <%# edw vazeis price %>
     <h2 id="product-title"></h2>
     <p id="product-description"> </p>
+    
+    <button id='button' class="btn btn-outline-dark"> Certificate </button>
+
+  </div>
+
+    <div class="row">
+    <div class="col-12">
+      <%= image_tag 'cross-sign.png', class:"xsign" %>
+      <%= image_tag 'Certificate-page-003.jpg', class:"certificate container-fluid"  %>
+    </div>
   </div>
 
 </div>
 
 
 <%=  content_for :javascript do %>
+
+
 <script>
+
+
 
 var url = new URL(window.location.href)
 var locale = localStorage.getItem("locale") || "en-US";
@@ -50,6 +67,9 @@ window.client.getEntry('59oeYVF5nPUIiHvHodbfS', {locale: locale}).then((data) =>
 });
 
 
+
+
+
 var buildPicture = (data) => {
     return `<div class="col text-center">
     <img src="https://${data.picture.fields.file.url}"class="img-fluid" alt="Responsive image">
@@ -65,6 +85,33 @@ var buildPicture = (data) => {
 
   </div>`
 }
+
+
+</script>
+
+
+<script> 
+const button = document.getElementById('button');
+const certificate = document.querySelector('.certificate');
+const x = document.querySelector('.xsign');
+
+console.log(button, certificate, x);
+
+
+button.addEventListener('click', function (event){
+  console.log('Hello')
+  certificate.style.display = 'block';
+  x.style.display = 'block';
+});
+
+
+x.addEventListener('click', function(event){
+  certificate.style.display = 'none';
+  x.style.display = 'none';
+  
+});
+
+
 
 
 </script>

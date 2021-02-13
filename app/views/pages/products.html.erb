@@ -2,13 +2,41 @@
 
   <div class="row flex" id="product-pictures" class="img-fluid" alt="Responsive image"></div>
 
+  <div class="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <%= link_to image_tag("Certificate-page-001.jpg"), class:"container-fluid" %>
+    </div>
+    <div class="carousel-item">
+      <%= link_to image_tag("Certificate-page-002.jpg"), class:"container-fluid" %>
+    </div>
+    <div class="carousel-item">
+      <%= link_to image_tag("Certificate-page-003.jpg"), class:"container-fluid" %>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
+  </div>
 
   <div class="row flex" id="text-product">
 <%# edw vazeis price %>
     <h2 id="product-title"></h2>
     <p id="product-description"> </p>
-          <button class="btn btn-outline-dark button"> Certificate </button>
+    <button class="btn btn-outline-dark button"> Certificate </button>
 
   </div>
 

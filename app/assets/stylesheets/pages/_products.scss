@@ -46,16 +46,13 @@
 #button {
   margin-right: 10px;
 }
-// .backgroundprod{
 
-//   background: url("BotiliaRadino1.jpeg");
-//   height: 100vh;
-//   width: 100%;
-//   background-size: cover;
-// }
-
-// .abouttextprod{
-//   padding-right: 400px;
-//   padding-left: 400px;
-//   text-align: center;
-// }
+.prices {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: none;
+}

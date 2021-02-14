@@ -13,6 +13,8 @@
     <p id="product-description"> </p>
     
     <button id='button' class="btn btn-outline-dark">Bio Certificate </button>
+    <button id='analysis_button' class="btn btn-outline-dark">Acidity Analysis </button>
+
 
   </div>
 
@@ -20,6 +22,7 @@
     <div class="col-12">
       <%= image_tag 'cross-sign.png', class:"xsign" %>
       <%= image_tag 'Certificate-page-003.jpg', class:"certificate container-fluid"  %>
+      <%= image_tag 'acidity_analysis.jpg', class:"analysis container-fluid"  %>
     </div>
   </div>
 
@@ -92,21 +95,29 @@ var buildPicture = (data) => {
 
 <script> 
 const button = document.getElementById('button');
+const analysis_btn = document.getElementById('analysis_button');
 const certificate = document.querySelector('.certificate');
+const analysis = document.querySelector('.analysis')
 const x = document.querySelector('.xsign');
 
-console.log(button, certificate, x);
+console.log(button, certificate, x,analysis);
 
 
 button.addEventListener('click', function (event){
-  console.log('Hello')
   certificate.style.display = 'block';
+  analysis.style.display = 'block';
+  x.style.display = 'block';
+});
+
+analysis_button.addEventListener('click', function (event){
+  analysis.style.display = 'block';
   x.style.display = 'block';
 });
 
 
 x.addEventListener('click', function(event){
   certificate.style.display = 'none';
+  analysis.style.display = 'none';
   x.style.display = 'none';
   
 });

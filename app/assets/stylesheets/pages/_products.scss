@@ -22,6 +22,13 @@
   position: relative;
 }
 
+.analysis {
+  width: 100%;
+  display: none;
+  z-index: 100;
+  position: relative;
+}
+
 .xsign {
   width: 50px;
   position: absolute;
@@ -36,6 +43,9 @@
   cursor: pointer;
 }
 
+#button {
+  margin-right: 10px;
+}
 // .backgroundprod{
 
 //   background: url("BotiliaRadino1.jpeg");

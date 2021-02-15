@@ -36,9 +36,9 @@
 
     <div class="col-md-6 col-xs-12">
 
-      <h2 id="home-product-title"></h2>
-      <div id="home-product-text" class="text-center"></div>
-      <%= button_to 'Find out more', products_path, method: :get, class: "btn btn-outline-dark" %> 
+      <h2 id="home-product-title"> <%= t('.title_2') %></h2>
+      <div id="home-product-text" class="text-center"> <%= t('.home_text_2')  %> </div>
+      <%= button_to t('.home_btn_1'), products_path, method: :get, class: "btn btn-outline-dark" %> 
 
     </div>
 

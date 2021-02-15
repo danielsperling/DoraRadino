@@ -34,7 +34,10 @@ en:
     home:
       title_1: "Our Story"
       home_btn_1: "Find out more"
-      home_text_1: "This is a test text"
+      home_text_1: "We are above all farmers, bound to our soil, our plants and the people who grow them and look after them. The Dora Radino family has always been at the fore front in the production of premium quality organic olive oil."
+
+      title_2: "Our Products"
+      home_text_2: "The olive oil produced by Azienda Agricola Dora Radino is an intense green-tinged golden colour and a slightly bitter, spicy taste, with a touch of fruity sweetness."
 
   _header:
     home: "Home"

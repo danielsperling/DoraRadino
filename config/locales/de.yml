@@ -3,7 +3,10 @@ de:
     home:
       title_1: "Über uns"
       home_btn_1: "Mehr"
-      home_text_1: "Das ist ein Test text"
+      home_text_1: "„Wir sind in erster Linie Landwirte, die mit Leib und Seele mit unseren Böden und Pflanzen verbunden sind, sowie auch mit den Menschen, die diese Geschenke der Natur anbauen und pflegen.”"
+
+      title_2: "Unsere Philosophie"
+      home_text_2: "Die Familie Dora Radino spielt seit jeher eine Vorreiterrolle bei der Herstellung von hochwertigem Bio - Olivenöl."
 
   _header:
     home: "Startseite"

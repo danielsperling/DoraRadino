@@ -30,9 +30,7 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  _header:
-    home: "Home"
-    about: "About"
-    products: "Products"
-    contact: "Contact"
-    gallery: "Gallery"
+  pages:
+    home:
+      title_1: "Our Story"
+      home_info: "lorem ipsumiom"

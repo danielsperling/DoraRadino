@@ -1,7 +1,5 @@
 de:
-  _header:
-    home: "Casa"
-    about: "Si sempre"
-    products: "Prodotti"
-    contact: "Contati"
-    gallery: "Galleria"
+  pages:
+    home:
+      title_1: "Unsere Geschicte"
+      home_info: "TEST TEST"

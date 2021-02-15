@@ -1,5 +1,13 @@
 de:
   pages:
     home:
-      title_1: "Unsere Geschicte"
-      home_info: "TEST TEST"
+      title_1: "Über uns"
+      home_btn_1: "Mehr"
+      home_text_1: "Das ist ein Test text"
+
+  _header:
+    home: "Startseite"
+    about: "Über uns"
+    products: "Produkte"
+    contact: "Kontakt"
+    gallery: "Galerie"

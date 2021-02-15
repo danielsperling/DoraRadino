@@ -33,4 +33,12 @@ en:
   pages:
     home:
       title_1: "Our Story"
-      home_info: "lorem ipsumiom"
+      home_btn_1: "Find out more"
+      home_text_1: "This is a test text"
+
+  _header:
+    home: "Home"
+    about: "About"
+    products: "Products"
+    contact: "Contact"
+    gallery: "Gallery"

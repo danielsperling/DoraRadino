@@ -4,8 +4,8 @@
 
 
  <div class="row" id="text-about">
-   <h2 id="about-title"></h2>
-   <p id="about-information"></p>
+   <h2 id="about-title"><%= t('.about_title') %></h2>
+   <p id="about-information"> <%= t('.about_text') %></p>
  </div>
 
 </div>
@@ -33,12 +33,12 @@ window.client.getEntry('6n40P0yYxByEyt15RHBc7Q', {locale: locale}).then((info) =
 
 
   //Title
-  aboutTitle.innerText = myAbout.title
+  // aboutTitle.innerText = myAbout.title
 
   // Description
   // aboutInformation.innerHTML = myAbout.information
-  aboutInformation.innerHTML = myAbout.information.content.map((text) =>
-    documentToHtmlString(text).replace(/\n/g, `</br>`));
+  // aboutInformation.innerHTML = myAbout.information.content.map((text) =>
+  //   documentToHtmlString(text).replace(/\n/g, `</br>`));
 
 });
 

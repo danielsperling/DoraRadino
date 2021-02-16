@@ -12,10 +12,10 @@
   <div class="row" id="home-text">
 
     <div class="col-md-6 col-xs-12">
-
-      <h2 id="home-title"></h2>
-      <div id="home-information" class="text-center"></div>
-      <%= button_to 'Find out more', about_path, method: :get, class: "btn btn-outline-dark" %> 
+ 
+     <h2> <%=  t('pages.home.title_1') %>  </h2> 
+      <div id="home-information" class="text-center"> <h5><%= t('.home_text_1') %></h5></div>
+      <%= button_to t('.home_btn_1'), about_path, method: :get, class: "btn btn-outline-dark" %> 
     
     </div>
 
@@ -36,9 +36,9 @@
 
     <div class="col-md-6 col-xs-12">
 
-      <h2 id="home-product-title"></h2>
-      <div id="home-product-text" class="text-center"></div>
-      <%= button_to 'Find out more', products_path, method: :get, class: "btn btn-outline-dark" %> 
+      <h2 id="home-product-title"> <%= t('.title_2') %></h2>
+      <div id="home-product-text" class="text-center"> <%= t('.home_text_2')  %> </div>
+      <%= button_to t('.home_btn_1'), products_path, method: :get, class: "btn btn-outline-dark" %> 
 
     </div>
 
@@ -83,14 +83,14 @@ window.client.getEntry('1tObOSALaX8lCVmhQZlDKk', {locale: locale}).then((info) =
     homeImage.innerHTML = buildPicture(myHome.picture)
 
     // Our Story
-    homeTitle.innerText = myHome.title
-    homeInformation.innerHTML = myHome.information.content.map(toHtml);
+    // homeTitle.innerText = myHome.title
+    // homeInformation.innerHTML = myHome.information.content.map(toHtml);
     homeInformationImage.innerHTML = buildPicture(myHome.informationImage)
 
 
     // Our products
-    homeProductTitle.innerHTML = myHome.productTitle
-    homeProductText.innerHTML = myHome.productText.content.map(toHtml);
+    // homeProductTitle.innerHTML = myHome.productTitle
+    // homeProductText.innerHTML = myHome.productText.content.map(toHtml);
     homeProductImage.innerHTML = buildPicture(myHome.productImage)
 });
 

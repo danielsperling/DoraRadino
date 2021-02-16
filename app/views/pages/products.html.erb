@@ -2,28 +2,11 @@
 
   <div class="row flex" id="product-pictures" class="img-fluid" alt="Responsive image"></div>
 
-<div class="row">
-
-<div class="prices">
-  <h4>0.75L - 10€ &emsp;</h4>
-  
-  <h4>3L - 33€ &emsp;</h4>
-
-  <h4>5L - 55€</h4>
-
-</div>
-
-</div>
-
-
-  
-
-
 
   <div class="row flex" id="text-product">
 <%# edw vazeis price %>
-    <h2 id="product-title"></h2>
-    <p id="product-description"> </p>
+    <h2 id="product-title"> <%= t('.products_title') %> </h2>
+    <p id="product-description"> <%= t('.products_text') %> </p>
     
     <button id='button' class="btn btn-outline-dark">Bio Certificate </button>
     <button id='analysis_button' class="btn btn-outline-dark">Acidity Analysis </button>
@@ -74,11 +57,11 @@ window.client.getEntry('59oeYVF5nPUIiHvHodbfS', {locale: locale}).then((data) =>
     })
 
     // TITLE
-    myTitle.innerText = myProduct.title
+    // myTitle.innerText = myProduct.title
 
     // Description
-    myDescription.innerHTML = myProduct.description.content.map((text) =>
-        documentToHtmlString(text).replace(/\n/g, `</br>`));
+    // myDescription.innerHTML = myProduct.description.content.map((text) =>
+    //     documentToHtmlString(text).replace(/\n/g, `</br>`));
 
 });
 

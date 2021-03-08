@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  scope '(:locale)', locale: /en|de|it/ do
+  scope '(:locale)', locale: /en|de|it|fr/ do
     root to: 'pages#home'
     get 'about', to: 'pages#about'
     get 'products', to: 'pages#products'

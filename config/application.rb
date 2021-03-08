@@ -11,7 +11,7 @@ module Olioradino2
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    config.i18n.available_locales = %i[en de]
+    config.i18n.available_locales = %i[en de it fr]
     config.i18n.default_locale = :en
 
     # Settings in config/environments/* take precedence over those specified here.
